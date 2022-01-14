@@ -1,0 +1,136 @@
+<html>
+<body>
+	<script src="D:\KODING\dicoding\penjualan.js"></script>
+	<head>
+		<!--meta viewport untuk tampilan web di mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<div class="jumbotron">
+			<title>NOPROTES.COM</title>
+			<link rel="stylesheet" class="featured-image" href="D:\KODING\Proyek\pusing-style.css">
+			<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+			<h1 class="noprotes">N O P R O T E S</h1>
+			<p class="motto">Minum Enak, Tidur Nyenyak</p>
+		</div>
+		<nav><!--menu atas dibawah box besar-->
+			<ul>
+				<li class="dropdown">Beli Kopi</a>
+					<ul class="isi-dropdown">
+						<li><a href="D:\KODING\Proyek\pusing.html #arabika-gayo">Kopi Arabika Gayo, Sumatera</a></li>
+						<li><a href="D:\KODING\Proyek\pusing.html #robusta-temanggung">Kopi Robusta Temanggung</a></li>
+						<li><a href="D:\KODING\Proyek\pusing.html #arabika-flores">Kopi Arabika Flores</a></li>
+						<li><a href="D:\KODING\Proyek\pusing.html #arabika-kintamani">Kopi Arabika Kintamani, Bali</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</head>
+</body>
+<body>
+<main>
+	<div id="content">
+		<article class="card">
+			<form name= "forminput">
+            <table>
+				<tr>
+				<td>Kode Barang	:</td>
+				<td><select name="inputkodebarang" onclick="combo()">
+					<option value="caption">**List Kode</option>
+					<option value="arabika-gayo">arabika-gayo</option>
+					<option value="robusta-temanggung">robusta-temanggung</option>
+					<option value="arabika-flores">arabika-flores</option> 
+					<option value="arabika-kintamani">arabika-kintamani</option>        
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td>Nama Barang	:</td>
+					<td><input type = "text" size ="25" name ="inputnamabarang"></td>
+				</tr>
+				
+				<tr>
+					<td>Harga Satuan	:</td>
+					<td><input type = "text" size ="15" name ="inputhargasatuan"></td>
+				</tr>
+				
+				<tr>
+					<td>Berat (gram)	:</td>
+					<td><input type = "text" size ="15" name ="inputberatbarang"></td>
+					</tr>
+
+				<tr>
+					<td>Jumlah Barang	:</td>
+					<td><input type = "text" size ="15" name ="inputjumlahbarang" value="1"></td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td><input type="button" value="Hitung Total" onclick="hitungtotal()"></td>
+				</tr>
+				
+				<tr>
+				<td>Total	:</td>
+				<td><input type = "text" size ="15" name ="inputtotal"></td>
+				</tr>
+				
+				<tr>
+					<td>Metode Pembayaran :</td>
+					<td><select name="inputkodebank" onclick="combo()">
+						<option value="caption">**List Bank</option>
+						<option value="mandiri">Bank Mandiri</option>
+						<option value="bca">Bank BCA</option>
+						<option value="bri">Bank BRI</option> 
+						<option value="bni">Bank BNI</option>        
+						</select></td>
+				</tr>
+				<tr>
+					<td>Nomor Rekening A/N :</td>
+					<td><input type = "text" size ="30" name ="inputnomorRekening"></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><input type = "text" size ="60" name ="inputwarning"></td>
+				</tr>
+				</table>
+			</form>
+		</article>
+	</div>
+		
+    <aside>
+    	<article class="profile card">
+    		<header>
+				<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+				<h2 style="font-family: Alegreya;">My Profile</h2>
+				<figure>
+					<img src="D:\KODING\Proyek\aset\foto_toga.png">
+				</figure>
+	    	</header>
+	    	<section>
+				<h3 style="font-family: Alegreya; font-size: 20px;">Informasi Pribadi</h3>
+	    		<table>
+	    			<tr>
+	    				<th align="left">Nama</th>
+	    				<td>Evan Mahendra</td>
+	    			</tr>
+	    			<tr>
+	    				<th align="left">Tempat, Tanggal Lahir</th>
+	    				<td>23 November 1995</td>
+	    			</tr>
+	    			<tr>
+	    				<th align="left">Almamater</th>
+	    				<td>S1 Sistem Informasi UNAIR<sup>2</sup></td>
+	    			</tr>
+	    			<tr>
+	    				<th align="left">Alamat</th>
+	    				<td>Taman Pondok Jati BA-15, Kec. Taman, Sidoarjo</td>
+	    			</tr>
+	    		</table>
+	    	</section>
+    	</article>
+    </aside>
+</main>
+<script src="D:\KODING\dicoding\penjualan.js"></script>
+</body>
+<footer>
+	<p>Copyright &copy; 2020 | By Evan Mahendra</p>
+</footer>
+</html>
